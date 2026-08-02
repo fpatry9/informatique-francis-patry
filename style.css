@@ -505,3 +505,8 @@ html{
     border-radius:15px;
     box-shadow:0 0 25px rgba(0,140,255,.35);
 }
+   
+.logo-principal{
+    transition:0.4s;
+    overflow:hidden;
+}
