@@ -337,3 +337,163 @@ section h2{
     margin-bottom:10px;
 
 }
+
+/* ===========================
+   HORAIRE
+=========================== */
+
+table{
+    width:100%;
+    max-width:700px;
+    margin:30px auto;
+    border-collapse:collapse;
+    background:#1e293b;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+table td{
+    padding:18px;
+    border-bottom:1px solid #334155;
+}
+
+table tr:hover{
+    background:#263548;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+#contact{
+    text-align:center;
+}
+
+#contact p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+#contact a{
+    color:#00bfff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+#contact a:hover{
+    text-decoration:underline;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:30px;
+    margin-top:60px;
+    color:#cbd5e1;
+    border-top:3px solid #00bfff;
+}
+
+/* ===========================
+   ANIMATIONS
+=========================== */
+
+.hero,
+.service-card,
+.galerie img,
+.apropos{
+    animation:fadeIn .8s ease;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:900px){
+
+header{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    gap:20px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.hero-text h3{
+
+    font-size:34px;
+
+}
+
+.hero-text p{
+
+    font-size:18px;
+
+}
+
+.boutons{
+
+    justify-content:center;
+
+}
+
+.apropos{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.apropos img{
+
+    width:220px;
+
+}
+
+section{
+
+    padding:50px 20px;
+
+}
+
+}
+
+html{
+    scroll-padding-top:100px;
+}
