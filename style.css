@@ -492,16 +492,16 @@ section{
 
 }
 
-}
-
 html{
     scroll-padding-top:100px;
+}
+
 .logo-principal{
     display:block;
     width:100%;
     max-width:450px;
     height:auto;
-    margin:20px auto;
+    margin:15px auto;
     border-radius:15px;
     box-shadow:0 0 25px rgba(0,140,255,.35);
 }
