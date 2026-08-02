@@ -103,9 +103,9 @@ nav a:hover{
 
     align-items:center;
 
-    padding:80px 10%;
+    padding:30px 5%;
 
-    gap:40px;
+    gap:20px;
 
 }
 
@@ -145,7 +145,7 @@ nav a:hover{
 
     width:100%;
 
-    max-width:420px;
+    max-width:280px;
 
     border-radius:20px;
 
@@ -194,7 +194,7 @@ nav a:hover{
 =========================== */
 
 section{
-    padding:80px 10%;
+    padding:40px 5%;
 }
 
 section h2{
@@ -496,13 +496,12 @@ section{
 
 html{
     scroll-padding-top:100px;
-}
 .logo-principal{
     display:block;
     width:100%;
-    max-width:900px;
-    margin:30px auto;
-    border-radius:20px;
-    box-shadow:0 0 35px rgba(0,140,255,.5);
-}
+    max-width:450px;
+    height:auto;
+    margin:20px auto;
+    border-radius:15px;
+    box-shadow:0 0 25px rgba(0,140,255,.35);
 }
