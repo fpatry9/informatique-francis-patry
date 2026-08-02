@@ -1,65 +1,15 @@
-// ==========================================
-// Informatique Francis Patry
-// script.js v1.0
-// ==========================================
+window.addEventListener("scroll", function () {
+    const logo = document.querySelector(".logo-principal");
 
-// Message de bienvenue
-window.addEventListener("load", () => {
-    console.log("Bienvenue sur le site d'Informatique Francis Patry");
+    if (window.scrollY > 100) {
+        logo.style.opacity = "0";
+        logo.style.height = "0";
+        logo.style.margin = "0";
+        logo.style.transition = "0.4s";
+    } else {
+        logo.style.opacity = "1";
+        logo.style.height = "auto";
+        logo.style.margin = "15px auto";
+        logo.style.transition = "0.4s";
+    }
 });
-
-// Animation des cartes de services
-const cartes = document.querySelectorAll(".service-card");
-
-cartes.forEach((carte) => {
-
-    carte.addEventListener("mouseenter", () => {
-        carte.style.transform = "scale(1.05)";
-        carte.style.transition = "0.3s";
-    });
-
-    carte.addEventListener("mouseleave", () => {
-        carte.style.transform = "scale(1)";
-    });
-
-});
-
-// Animation de la galerie
-const images = document.querySelectorAll(".galerie img");
-
-images.forEach((img) => {
-
-    img.addEventListener("click", () => {
-
-        img.classList.toggle("zoom");
-
-    });
-
-});
-
-// Message lors du clic sur le bouton Rendez-vous
-const rendezVous = document.querySelector('a[href="#contact"]');
-
-if (rendezVous) {
-
-    rendezVous.addEventListener("click", () => {
-
-        alert(
-            "Merci de votre intérêt !\n\nPour le moment, les rendez-vous se prennent par téléphone au 819-463-0999."
-        );
-
-    });
-
-}
-
-// Affiche l'année automatiquement dans le footer
-const footer = document.querySelector("footer p");
-
-if (footer) {
-
-    footer.innerHTML =
-        "© " +
-        new Date().getFullYear() +
-        " Informatique Francis Patry<br>Votre expert en informatique à Gracefield";
-
-}
