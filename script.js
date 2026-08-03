@@ -1,22 +1,17 @@
-window.addEventListener("scroll", function () {
-    const logo = document.querySelector(".logo-principal");
-    const header = document.querySelector("header");
+const header = document.querySelector("header");
 
-    if (window.scrollY > 100) {
-        logo.style.opacity = "0";
-        logo.style.maxHeight = "0";
-        logo.style.margin = "0";
-        logo.style.transition = "all 0.4s ease";
+let dernierScroll = 0;
 
-        header.style.paddingTop = "10px";
-        header.style.paddingBottom = "10px";
+window.addEventListener("scroll", () => {
+    const scroll = window.pageYOffset;
+
+    if (scroll > dernierScroll && scroll > 100) {
+        // Descend : cacher le header
+        header.style.transform = "translateY(-100%)";
     } else {
-        logo.style.opacity = "1";
-        logo.style.maxHeight = "450px";
-        logo.style.margin = "15px auto";
-        logo.style.transition = "all 0.4s ease";
-
-        header.style.paddingTop = "";
-        header.style.paddingBottom = "";
+        // Remonte : afficher le header
+        header.style.transform = "translateY(0)";
     }
+
+    dernierScroll = scroll;
 });
