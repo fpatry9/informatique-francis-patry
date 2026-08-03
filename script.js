@@ -1,17 +1,9 @@
 const header = document.querySelector("header");
 
-let dernierScroll = 0;
-
 window.addEventListener("scroll", () => {
-    const scroll = window.pageYOffset;
-
-    if (scroll > dernierScroll && scroll > 100) {
-        // Descend : cacher le header
+    if (window.scrollY > 120) {
         header.style.transform = "translateY(-100%)";
-    } else {
-        // Remonte : afficher le header
+    } else if (window.scrollY < 20) {
         header.style.transform = "translateY(0)";
     }
-
-    dernierScroll = scroll;
 });
