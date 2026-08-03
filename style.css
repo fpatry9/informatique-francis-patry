@@ -507,6 +507,5 @@ html{
 }
    
 .logo-principal{
-    transition:0.4s;
-    overflow:hidden;
+    transition: opacity 0.4s ease, transform 0.4s ease;
 }
