@@ -45,6 +45,10 @@ header{
 
     box-shadow:0 5px 20px rgba(0,0,0,.35);
 
+   transition: transform .35s ease;
+   
+   will-change: transform;
+   
 }
 
 .logo h1{
