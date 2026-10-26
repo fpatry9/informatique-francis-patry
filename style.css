@@ -517,3 +517,47 @@ html{
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
+/* Optimisation de la mise en page sur ordinateur */
+@media (min-width: 901px) {
+
+    body > section {
+        width: 100%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }
+
+    .hero {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .hero-text,
+    .hero-image {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .grille-de-services {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 25px;
+    }
+
+    .galerie {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .galerie img {
+        display: block;
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+}
+
