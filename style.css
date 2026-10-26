@@ -500,19 +500,20 @@ html{
     scroll-padding-top:100px;
 }
 
-.logo-principal{
-    display:block;
-    width:100%;
-    max-width:450px;
-    max-height:450px;
-    height:auto;
-    margin:15px auto;
-    border-radius:15px;
-    box-shadow:0 0 25px rgba(0,140,255,.35);
-    overflow:hidden;
-    transition:all 0.4s ease;
+
+.logo-principal {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 15px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 140, 255, 0.35);
+    transition: all 0.4s ease;
 }
+
    
 .logo-principal{
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
+
